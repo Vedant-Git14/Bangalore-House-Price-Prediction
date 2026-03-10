@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title> House Price Prediction | ML Project</title>
+<link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+<div class="container-fluid">
+<span class="logo">🏠 Bangalore House Price Predictor </span>
+</div>
+</nav>
+
+<div class="main-container">
+
+<div class="card prediction-card">
+
+<div class="card-header">
+<h2>Prediction Result</h2>
+<p>Your estimated house price</p>
+</div>
+
+<div class="card-body">
+
+<div class="result-box">
+<h1>💰 {{result}}</h1>
+</div>
+
+<div style="text-align:center; margin-top:30px;">
+
+<a href="{{url_for('index')}}">
+<button class="predict-btn">🏠 Predict Another House</button>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

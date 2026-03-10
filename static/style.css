@@ -1,0 +1,112 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+padding:0;
+background: linear-gradient(135deg,#667eea,#764ba2);
+min-height:100vh;
+}
+
+/* NAVBAR */
+
+.navbar{
+background:white;
+padding:15px 40px;
+box-shadow:0px 5px 15px rgba(0,0,0,0.2);
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#333;
+}
+
+/* MAIN CONTAINER */
+
+.main-container{
+display:flex;
+justify-content:center;
+align-items:center;
+margin-top:80px;
+}
+
+/* CARD */
+
+.prediction-card{
+width:600px;
+border:none;
+border-radius:15px;
+box-shadow:0px 10px 30px rgba(0,0,0,0.3);
+animation: fadeIn 1s ease;
+}
+
+/* HEADER */
+
+.card-header{
+text-align:center;
+background:white;
+border-bottom:none;
+}
+
+.card-header h2{
+font-weight:bold;
+}
+
+.card-header p{
+color:gray;
+}
+
+/* FORM */
+
+.form-group{
+margin-top:15px;
+}
+
+.form-control{
+border-radius:8px;
+}
+
+/* BUTTON */
+
+.predict-btn{
+margin-top:20px;
+width:100%;
+padding:12px;
+border:none;
+border-radius:8px;
+font-size:18px;
+font-weight:bold;
+color:white;
+background: linear-gradient(45deg,#ff6a00,#ee0979);
+transition:0.3s;
+}
+
+.predict-btn:hover{
+transform:scale(1.05);
+box-shadow:0px 5px 20px rgba(0,0,0,0.3);
+}
+
+/* RESULT */
+
+.result-box{
+margin-top:20px;
+text-align:center;
+font-size:22px;
+color:#28a745;
+font-weight:bold;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+
+0%{
+opacity:0;
+transform:translateY(30px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0px);
+}
+
+}
